@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<head>
   <meta name="viewport" content="width=device-width;
     initial-scale=1; maximum-scale=1; user-scalable=yes;"/>
 
@@ -9,12 +8,23 @@
     <link href="css/roboto.min.css" rel="stylesheet">
     <link href="css/material-fullpalette.min.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
+
+      <!-- Login and Registration Processing Scripts -->
+      <script src='js/sha512.js'></script> 
+      <script src='js/forms.js'></script> 
+    
+
+
+    <!--JQUERY FORM Plugin for AJAX FORMS-->
+    <script src='js/jquery.form.js'></script>
+
+
 <title>Robo Cop</title>
 
 </head>
 <body>
 
-
+<!--START NAVBAR v1.0-->
 <div class="navbar navbar-inverse">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -25,10 +35,16 @@
         <a class="navbar-brand" href="javascript:void(0)">Robocop</a>
     </div>
     <div class="navbar-collapse collapse navbar-inverse-collapse">
-        <form class="navbar-form navbar-right">
+        <form action='crimenut.maxwellbuck.com/users/new' class="navbar-form navbar-right" method="post" name="login_form">
             <input type="text" class="form-control col-lg-8" name ="username" placeholder="Username">
             <input type="password" class="form-control col-lg-8" name = 'password' placeholder="Password">
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
+<!--END NAVBAR v1.0-->
+
+</body>
+
+
+</html>
