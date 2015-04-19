@@ -67,97 +67,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="textArea" class="col-lg-2 control-label">Narrative</label>
-                                <div class="col-lg-10">
-                                    <textarea class="form-control empty" rows="3" id="textArea"></textarea>
-                                    <span class="help-block">Describe the event in clear detail</span>
-                                </div>
-                            </div>
-                        <legend>Victims</legend>
 
-                            <div class="form-group">
-                                <label for="time" class="col-lg-2 control-label">Drivers License</label>
-                                <div class="col-lg-10">
-                                    <input style="" placeholder="Profile Picture" class="edittextbox" type="file" onchange="populate()" name="img">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="time" class="col-lg-2 control-label">First Name</label>
-                                <div class="col-lg-10">
-                                    <input class="form-control" id="inputFNAME" placeholder="First Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="time" class="col-lg-2 control-label">Last Name</label>
-                                <div class="col-lg-10">
-                                    <input class="form-control" id="inputLNAME" placeholder="Last Name">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="time" class="col-lg-2 control-label">DOB</label>
-                                <div class="col-lg-10">
-                                    <div class="container">
-        							    <div class="col-sm-6">
-        							        <div class="form-group">
-        							            <div class="row">
-        							                <div class="col-md-8">
-        							                    <div id="datetimepicker12_3"></div>
-        							                </div>
-        							            </div>
-        							        </div>
-        							    </div>
-        							    <script type="text/javascript">
-        							        $(function () {
-        							            $('#datetimepicker12_3').datetimepicker({
-        							                inline: true,
-        								                format: "MM DD YYYY"
-        							            });
-
-        							            $('#datetimepicker12_3 a').removeClass('btn');
-        							        });
-        							    </script>
-        							</div> <!--Ends container-->
-                                </div>
-                            </div><!-- ends form group -->
-
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label">Race</label>
-                                <div class="col-lg-10">
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="A" checked=""><span class="circle"></span><span class="check"></span>
-                                            Asian / Pacific Islander
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="B"><span class="circle"></span><span class="check"></span>
-                                            Black
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="I"><span class="circle"></span><span class="check"></span>
-                                            Native American or American Indian
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="W"><span class="circle"></span><span class="check"></span>
-                                            White
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="U"><span class="circle"></span><span class="check"></span>
-                                            Unknown
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">Location:</label>
@@ -199,14 +109,97 @@
                                 enableAutocomplete: true
                             });</script>
 
-
                             <div class="form-group">
                                 <label for="textArea" class="col-lg-2 control-label">Narrative</label>
                                 <div class="col-lg-10">
-                                    <textarea class="form-control empty" rows="3" id="narrative" name="narrative">{{narrative}}</textarea>
+                                    <textarea class="form-control empty" rows="3" id="textArea"></textarea>
                                     <span class="help-block">Describe the event in clear detail</span>
                                 </div>
                             </div>
+                       
+                        <legend>Victims</legend>
+
+                            <div class="form-group">
+                                <label for="time" class="col-lg-2 control-label">Drivers License</label>
+                                <div class="col-lg-10">
+                                    <input style="" placeholder="Profile Picture" class="edittextbox" type="file" onchange="populate()" name="img">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time" class="col-lg-2 control-label">First Name</label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="inputFNAME" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="time" class="col-lg-2 control-label">Last Name</label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="inputLNAME" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="datetimepicker3" class="col-lg-2 control-label">DOB</label>
+                                
+                                <div class="container">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker3'>
+                                                <input id ='dateOfBirth' name ='dateOfBirth' type='text' class="form-control" value="{{dateOfBirth}}"/>
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker3').datetimepicker({
+                                                inline: true,
+                                                format: "MM/DD/YYYY"
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Race</label>
+                                <div class="col-lg-10">
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="A" checked=""><span class="circle"></span><span class="check"></span>
+                                            Asian / Pacific Islander
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="B"><span class="circle"></span><span class="check"></span>
+                                            Black
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="I"><span class="circle"></span><span class="check"></span>
+                                            Native American or American Indian
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="W"><span class="circle"></span><span class="check"></span>
+                                            White
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="U"><span class="circle"></span><span class="check"></span>
+                                            Unknown
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                     
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">Sex</label>
@@ -323,8 +316,8 @@ function partB(){
     document.getElementById("inputLNAME").value = "White";
     document.getElementById("optionsRadios4").checked = true;
     document.getElementById("optionsRadios11").checked = true;
-    document.getElementById("dateOfBirth").value = "02-28-1993"
-    var dateOfBirth = event.target.dateOfBirth.value;
+    document.getElementById("dateOfBirth").value = "02/28/1993"
+    //var dateOfBirth = event.target.dateOfBirth.value;
 
 }
 function done(){
