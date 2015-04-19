@@ -1,0 +1,220 @@
+<template name='report'>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="page-header">
+            <h1 id="forms">New Report</h1>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="well bs-component">
+                <form class="form-horizontal" abineguid="49909B7A65664C7A84BFD5B151C27F08">
+                    <fieldset>
+                        <legend>Admin</legend>
+                        <div class="form-group">
+                        	<label for="title" class="col-lg-2 control-label">Title</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Title">
+                            </div>
+                        </div>
+                            <!-- Needs for and placeholders -->
+
+                        <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Time Began</label>
+                            <div class="col-lg-10">
+                                <div class="container">
+    							    <div class="col-sm-6">
+    							        <div class="form-group">
+    							            <div class="row">
+    							                <div class="col-md-8">
+    							                    <div id="datetimepicker12"></div>
+    							                </div>
+    							            </div>
+    							        </div>
+    							    </div>
+    							    <script type="text/javascript">
+    							        $(function () {
+    							            $('#datetimepicker12').datetimepicker({
+    							                inline: true,
+    							                sideBySide: true,
+    								                format: ""
+    							            });
+
+    							            $('#datetimepicker12 a').removeClass('btn');
+    							        });
+    							    </script>
+    							</div>
+                            </div>
+                        </div>
+                         
+
+                        <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Time Ended</label>
+                            <div class="col-lg-10">
+                                <div class="container">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div id="datetimepicker12_2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker12_2').datetimepicker({
+                                                inline: true,
+                                                sideBySide: true,
+                                                    format: ""
+                                            });
+
+                                            $('#datetimepicker12_2 a').removeClass('btn');
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea" class="col-lg-2 control-label">Narrative</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control empty" rows="3" id="textArea"></textarea>
+                                <span class="help-block">Describe the event in clear detail</span>
+                            </div>
+                        </div>
+                        <legend>Victims</legend>
+                        	<div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">First Name</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="First Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Last Name</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Last Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">DOB</label>
+                            <div class="col-lg-10">
+                                <div class="container">
+								    <div class="col-sm-6">
+								        <div class="form-group">
+								            <div class="row">
+								                <div class="col-md-8">
+								                    <div id="datetimepicker12_3"></div>
+								                </div>
+								            </div>
+								        </div>
+								    </div>
+								    <script type="text/javascript">
+								        $(function () {
+								            $('#datetimepicker12_3').datetimepicker({
+								                inline: true,
+									                format: "MM DD YYYY"
+								            });
+
+								            $('#datetimepicker12_3 a').removeClass('btn');
+								        });
+								    </script>
+								</div>
+                            </div>
+                          </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Race</label>
+                            <div class="col-lg-10">
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="Black" checked=""><span class="circle"></span><span class="check"></span>
+                                        Black
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span class="circle"></span><span class="check"></span>
+                                        Hispanic
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span class="circle"></span><span class="check"></span>
+                                        Afican American
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span class="circle"></span><span class="check"></span>
+                                        Hood
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Sex</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Sex">
+                            </div>
+                          </div>
+
+                        <legend>Property</legend>
+                        	<div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Item Type</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Item Type">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Make</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Make">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Model</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Model">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Value $$</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Value">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Description</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Description">
+                            </div>
+                          </div>
+                        <legend>Offenses</legend>
+                        	<div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Ohio Revised Code</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Ohio Revised Code">
+                            </div>
+                        </div>
+
+                            <div class="form-group">
+                            <label for="time" class="col-lg-2 control-label">Section Number</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Section Number">
+                            </div>
+                        </div>
+                       
+
+
+                        </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div> <!-- end div class row -->
+
+</template>
