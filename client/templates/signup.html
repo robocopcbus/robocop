@@ -1,0 +1,49 @@
+<template name='signup'>
+    <div class='container'>
+      <div class='jumbotron'>
+        <!--START SIGNUP FORM v0.1-->
+        <div id='signupForm' class="form-horizontal">
+            <fieldset>
+                <legend>Create an Account</legend>
+                <div class="form-group">
+                    <label for="signupFirstName" class="col-xs-2 control-label">Name</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="signupFirstName" name='username' placeholder="First Name">
+                    </div>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="signupLastName" name='username' placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail" class="col-xs-2 control-label">Email</label>
+                    <div class="col-xs-5">
+                        <input type="email" class="form-control" id="signupEmail" name='email' placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword" class="col-xs-2 control-label">Pass</label>
+                    <div class="col-xs-5">
+                        <input type="password" class="form-control" id="signupPassword" name = 'password' placeholder="Password">
+                    </div>
+                    <div class='col-xs-5'>
+                        <input type="password" class="form-control" id="signupPasswordConfirm" name ='passwordConfirm' placeholder="Confirm Password">
+                    </div>
+
+                    <!--<div class="col-xs-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> I agree to the terms and conditions.
+                            </label>
+                        </div>
+                     </div>  --> <!-- TODO: THE CHECKBOX DOESN"T WORK -->
+                     <label for="signupFormSubmit" class="col-xs-2 control-label"></label>
+                    <div class='col-xs-10'>
+                        <button id='signupFormSubmit' class="btn btn-primary" >Submit</button>
+                    </div>
+                </div>
+        
+            </fieldset>
+        </div> <!-- END signup form -->
+      </div> <!-- END jumbotron -->
+    </div> <!-- END container -->
+</template>

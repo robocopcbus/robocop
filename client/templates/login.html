@@ -1,0 +1,7 @@
+<template name='login'>
+	<form id='loginForm' class="navbar-form navbar-right" method="post" name="login_form">
+	    <input type="email" id='email' class="form-control col-lg-8" name ="email" placeholder="Email">
+	    <input type="password" id='password' class="form-control col-lg-8" name = 'password' placeholder="Password">
+	    <button type="submit" class="btn btn-primary">Log In</button> OR <a class="btn btn-primary" href="{{pathFor 'signup'}}">Sign Up</a>
+	</form>
+</template>
