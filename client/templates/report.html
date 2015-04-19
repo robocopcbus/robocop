@@ -12,7 +12,7 @@
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
         <div class="well bs-component">
-            <form class="form-horizontal" abineguid="49909B7A65664C7A84BFD5B151C27F08">
+            <form id="newReport" class="form-horizontal" abineguid="49909B7A65664C7A84BFD5B151C27F08" action="#">
                 <fieldset>
                     <legend>Admin</legend>
                     <div class="form-group">
@@ -51,7 +51,6 @@
                         </div>
                     </div>
                      
-
                     <div class="form-group">
                         <label for="time" class="col-lg-2 control-label">Time Ended</label>
                         <div class="col-lg-10">
@@ -79,6 +78,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label for="textArea" class="col-lg-2 control-label">Narrative</label>
                         <div class="col-lg-10">
@@ -87,16 +87,24 @@
                         </div>
                     </div>
                     <legend>Victims</legend>
-                    	<div class="form-group">
+
+                    <div class="form-group">
+                        <label for="time" class="col-lg-2 control-label">Drivers License</label>
+                        <div class="col-lg-10">
+                            <input style="" placeholder="Profile Picture" class="edittextbox" type="file" onchange="populate()" name="img">
+                        </div>
+                      </div>
+
+                    <div class="form-group">
                         <label for="time" class="col-lg-2 control-label">First Name</label>
                         <div class="col-lg-10">
-                            <input class="form-control" id="inputEmail" placeholder="First Name">
+                            <input class="form-control" id="inputFNAME" placeholder="First Name">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="time" class="col-lg-2 control-label">Last Name</label>
                         <div class="col-lg-10">
-                            <input class="form-control" id="inputEmail" placeholder="Last Name">
+                            <input class="form-control" id="inputLNAME" placeholder="Last Name">
                         </div>
                       </div>
                       <div class="form-group">
@@ -125,55 +133,68 @@
 							</div>
                         </div>
                       </div>
+
                     <div class="form-group">
                         <label class="col-lg-2 control-label">Race</label>
                         <div class="col-lg-10">
                             <div class="radio radio-primary">
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="White" checked=""><span class="circle"></span><span class="check"></span>
-                                    White
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Hispanic or Latino"><span class="circle"></span><span class="check"></span>
-                                    Hispanic or Latino
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Black or African American"><span class="circle"></span><span class="check"></span>
-                                    Black or African American
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Native American or American Indian"><span class="circle"></span><span class="check"></span>
-                                    Native American or American Indian
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Asian / Pacific Islander"><span class="circle"></span><span class="check"></span>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="A" checked=""><span class="circle"></span><span class="check"></span>
                                     Asian / Pacific Islander
                                 </label>
                             </div>
                             <div class="radio radio-primary">
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Other"><span class="circle"></span><span class="check"></span>
-                                    Other
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="B"><span class="circle"></span><span class="check"></span>
+                                    Black
                                 </label>
-                            </div>                                
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="I"><span class="circle"></span><span class="check"></span>
+                                    Native American or American Indian
+                                </label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="W"><span class="circle"></span><span class="check"></span>
+                                    White
+                                </label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios5" value="U"><span class="circle"></span><span class="check"></span>
+                                    Unknown
+                                </label>
+                            </div>
                         </div>
                     </div>
 
                     
-                      <div class="form-group">
-                        <label for="time" class="col-lg-2 control-label">Sex</label>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Sex</label>
                         <div class="col-lg-10">
-                            <input class="form-control" id="inputEmail" placeholder="Sex">
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios3" id="optionsRadios11" value="M" checked=""><span class="circle"></span><span class="check"></span>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios3" id="optionsRadios21" value="F"><span class="circle"></span><span class="check"></span>
+                                    Female
+                                </label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <label>
+                                    <input type="radio" name="optionsRadios3" id="optionsRadios21" value="U"><span class="circle"></span><span class="check"></span>
+                                    Unknown
+                                </label>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+
 
                     <legend>Property</legend>
                     	<div class="form-group">
@@ -197,7 +218,7 @@
                       <div class="form-group">
                         <label for="time" class="col-lg-2 control-label">Value $$</label>
                         <div class="col-lg-10">
-                            <input class="form-control" id="inputEmail" placeholder="Value">
+                            <input class="form-control" id="inputEmail" placeholder="Value" value="$">
                         </div>
                       </div>
                       <div class="form-group">
@@ -206,6 +227,7 @@
                             <input class="form-control" id="inputEmail" placeholder="Description">
                         </div>
                       </div>
+
                     <legend>Offenses</legend>
                     	<div class="form-group">
                         <label for="time" class="col-lg-2 control-label">Ohio Revised Code</label>
@@ -214,20 +236,63 @@
                         </div>
                     </div>
 
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="time" class="col-lg-2 control-label">Section Number</label>
                         <div class="col-lg-10">
                             <input class="form-control" id="inputEmail" placeholder="Section Number">
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label for="time" class="col-lg-2 control-label">Video File</label>
+                        <div class="col-lg-10">
+                            <input style="" placeholder="Profile Picture" class="edittextbox" type="file" name="img">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="time" class="col-lg-2 control-label">Audio File</label>
+                        <div class="col-lg-10">
+                            <input style="" placeholder="Profile Picture" class="edittextbox" type="file" name="img">
+                        </div>
+                      </div>
                    
+                    <button id='' class="btn btn-primary" onclick="done()">Submit</button>
 
-
-                        </fieldset>
+                </fieldset>
             </form>
 
         </div>
     </div>
 </div> <!-- end div class row -->
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#newReport').submit(function(event){
+        event.preventDefault();
+
+    });
+
+});
+function populate(){
+    window.setTimeout(partB,2500);
+}
+function partB(){
+    document.getElementById("inputFNAME").value = "Alle";
+    document.getElementById("inputLNAME").value = "White";
+    document.getElementById("optionsRadios4").checked = true;
+    document.getElementById("optionsRadios11").checked = true;
+
+}
+function done(){
+    window.setTimeout(partc,2500);   
+}
+function partc(){
+    window.location.assign("/done");
+}
+</script>
+
 </template>
+
